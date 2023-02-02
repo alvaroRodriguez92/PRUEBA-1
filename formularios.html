@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form method="GET" action="#">
+        Nombre:
+        <br/>
+        <input type="text" name="firstname"/>
+        <br/>
+        Correo:
+        <br/>
+        <input type="email" name="email"/>
+        <br/>
+        Password:
+        <br/>
+        <input type="password" name="password"/>
+        <hr/>
+        <input type="file" name="archivo"/>
+        <br/>
+        <hr/>
+        <p>Elige tu género</p>
+        <input type="radio" name="genero" id="masculino"/> Masculino <br/>
+        <input type="radio" name="genero" id="femenino"/> Femenino <br/>
+        <input type="radio" name="genero" id="otro" checked/> Otro <br/>
+
+        <hr/>
+
+        <p>Elige tu vehículo</p>
+
+        <input type="checkbox" name="vehiculo" value="coche" checked>Coche <br/>
+        <input type="checkbox" name="vehiculo2" value="moto">Moto <br/>
+        <hr/>
+
+        <select name="pais" id="pais">
+            <optgroup label="Europa"> 
+
+                <option value="ES">España</option>
+                <option value="IT" selected>Italia</option>
+                <option value="EN">Inglaterra</option>
+
+            </optgroup>
+
+            <optgroup label="America"> 
+                <option value="AR">Argentina</option>
+                <option value="CH">Chile</option>
+                <option value="MX">Mexico</option>
+
+            </optgroup>
+
+
+        </select>
+        <hr/>
+        <label for="name">Nombre
+            <input type="text" name="nombre" id="name" placeholder="Insert your name"/>
+        </label>
+
+        <label for="email">Correo electrónico
+            <input type="email" name="email" id="name" placeholder="Insert your name"/>
+        </label> 
+
+        <hr/>
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">
+            <input type="text" name="nombre" placeholder="Nombre"/></label><br/>
+            <br/>
+            <input type="text" name="apellido" placeholder="Apellido"/>
+        </fieldset>
+        <br/>
+
+        <textarea name="observaciones" id="observaciones" placeholder="Escribe tus observaciones"></textarea>
+
+        <br/>
+
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Restablecer"/>
+        <button type="submit">Enviar formulario</button>
+
+
+
+    </form>
+</body>
+</html>
